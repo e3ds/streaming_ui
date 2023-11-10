@@ -4,7 +4,7 @@ var clientUserName ="demo"
 
 
 
-window.onload = function onloadOfHtml() 
+window.onload = function () 
 				{
 					
 					e3ds_controller.main(e3ds_session_token,clientUserName)
