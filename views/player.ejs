@@ -39,36 +39,39 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-      <!-- <base href="/"> --> <!-- disable this line for streaming ui -->
-      <!-- <base href="/">  -->
+     
+      <base href="/">
+	   
+	   
       <script type="text/javascript" src="src/jquery.min.js"></script>
       <script type="text/javascript" src="src/toast-alert.js"></script>
-	  <!--<script src="https://apis.google.com/js/api.js"></script>-->
-      
-      
-	  
-	     <!-- add preLoadScripts.js which contains all the dinafiantion which will be requyired  by e3dsCore.min.js -->
+
 		
-		<script type="text/javascript" src="scripts_demo/preLoadScripts.js"></script>
-		<script type="text/javascript" src="dist/e3dsCore.min.js"></script>
-		<script type="text/javascript" src="scripts_demo/postLoadScripts.js"></script>
 		
 		<script type='text/javascript'>
        
-			var appconfigPassed2Ejs ={}
 			
-				
-				// token =<%-JSON.stringify(token)%>
+				 
+				 e3ds_session_token =<%-JSON.stringify(token)%>
 				 
 				
-				// clientUserName =<%-JSON.stringify(clientUserName)%>
+				 clientUserName =<%-JSON.stringify(clientUserName)%>
 		 
          
 		</script>
-
-      <style>
+	  
+		<script type="text/javascript" src="dist/e3dsCore.min.js"></script> 
+	  
+	  <script type="text/javascript" src="scripts_demo/postLoadScripts.js"></script>
+	  
+	  <style>
+	  
       </style>
-   
+	  
+     
+      <link type="text/css" rel="stylesheet" href="assets/css/voip.css"/>
+      <script type="text/javascript" src="src/voip.js"></script>
+     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
       <link type="text/css" rel="stylesheet" href="assets/public/virtualKeyboard.css">
       <link type="text/css" rel="stylesheet" href="assets/public/player.css">
@@ -85,9 +88,7 @@
       <div id="playerUI"  style="display: block;" >
          <div id="player"  style="display: block;">
             <video id="streamingVideo" playsinline >
-               <!--
-                  <source src="https://eagle3dstreaming-build-upload-1.s3.amazonaws.com/0.extras/demo1.mp4" type="video/mp4">
-                  -->
+            
                <source src="" type="video/mp4">
             </video>
             <div id="videoPlayOverlay" class="cover">
