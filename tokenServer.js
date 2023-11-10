@@ -1,6 +1,6 @@
 const apiKey = "your api key"  // collect from https://account.eagle3dstreaming.com/api-keys-management 
 const tokenExpiryDuration = 60000
-var clientUserName = "demo";
+var clientUserName = "your user name";
 var streamingAppInfo = 
 						{
 						  "core": {
