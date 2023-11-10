@@ -1,25 +1,15 @@
-const apiKey = "U2FsdGVkX1/1QwWXJeA8YFgqFkv58NEn/gi9TTtJauH62YQW/OLhiSYpbwyFievjsFRyPkYrgcVkdk539+HRg/FsY53ZkGB+a5IgrOjizKY00RwTgv/pSdrY9VCBK9ViDfyZHEx8v/hyFNGGXEQ0vo4W473azwxFM5VT3rD7R0I="
-	
+const apiKey = "your api key"  // collect from https://account.eagle3dstreaming.com/api-keys-management 
 const tokenExpiryDuration = 60000
 var clientUserName = "demo";
 var streamingAppInfo = 
-				{
-					"core": 
-											  {
-												
-												"domain": "connector_ms6.eagle3dstreaming.com",
-												"userName": clientUserName,
-												"appName": "ue52",
-												"configurationName": "0"
-												
-											  },
-				  
-					"configurationToOverride": 
-											  {
-												
-												
-											  }
-				}
+						{
+						  "core": {
+							"domain": "your domain"
+							"userName": clientUserName,
+							"appName": "your app name",
+							"configurationName": "your config name"
+						  }
+						}
 				
 
 function GenerateStreamingSessionToken(res,indexCP_dist=false) 
